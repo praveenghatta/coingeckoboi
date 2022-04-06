@@ -10,12 +10,6 @@ To Run the project:
    b. In step 4, you should see the QR Code. Just scan the QR Code
    c. Alternatively, you can download the Android/iOS simulators (out of scope for now)
 
-Code has been implemented in form of components:
-App ---------> CoinList  ----- CoinListItem ------> CoinItemDetail
-                         ----- CoinListItem ------> CoinItemDetail
-                         ----- CoinListItem ------> CoinItemDetail
-                         ----- CoinListItem ------> CoinItemDetail
-
 ![img_1.png](img_1.png)
 ![img_2.png](img_2.png)
 
