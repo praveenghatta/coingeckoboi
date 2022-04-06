@@ -40,7 +40,7 @@ export default function CoinItemDetail(props:any){
     },[]);
 
     //Display preloader, till data is loaded.
-    if(!detail) return <ActivityIndicator size="large" />;
+    if(!detail) return <ActivityIndicator size="large" style={styles.preloader}/>;
 
     const description = detail.description.en;
 
@@ -82,6 +82,11 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         backgroundColor: '#ecf0f1',
         padding: 20,
+    },
+    preloader:{
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: "center"
     },
     otherContent:{
         margin: 10,
