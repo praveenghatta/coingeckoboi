@@ -1,20 +1,18 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React, {useState, useEffect} from 'react';
+import CoinList from "./components/CoinList";
+import CoinItemDetail from './components/CoinItemDetail';
+import {NavigationContainer} from "@react-navigation/native";
+import {createStackNavigator} from "@react-navigation/stack";
+
+const {Navigator, Screen} = createStackNavigator();
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+    return(
+        <NavigationContainer>
+            <Navigator>
+                <Screen name="Markets" options={{ title:"Markets"}} component={CoinList} />
+                <Screen name="Details" options={{ title:"Coin Details"}} component={CoinItemDetail} />
+            </Navigator>
+        </NavigationContainer>
+    );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
