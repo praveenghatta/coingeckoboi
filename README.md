@@ -19,4 +19,4 @@ Spoilers/ToDo:
 3. Move the duplicated code used for loading to a custom hook to avoid redundancy
 4. Testing/Test cases could be added using jest package
 
-Contact: +353877151916, praveenghatta@gmail.com
+Contact: praveenghatta@gmail.com
